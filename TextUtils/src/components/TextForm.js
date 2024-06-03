@@ -53,12 +53,12 @@ export default function TextForm(props) {
             <button className="btn btn-secondary mx-2 my-2" onClick={clearText}>Clear Text</button>
         </div>
         <div className="container my-2" style={{color:props.mode ==='dark'?'#c9c9c9':'black'}}>
-            <h2>Your text summary</h2>
+            <h2>Your text summary !</h2>
             <p>{text.trim().split(/\s+/).filter(word => word.length > 0).length} words and {text.length} characters</p>
 
             <p>{0.008 * text.split(/[ ]+/).length} minutes needed to read this</p>
-            <h2>Preview !</h2>
-            <p>{text.length>0?text:"Enter something in the textbox above to preview it here"}</p>
+            <h2>Your text preview !</h2>
+            <p>{text.length>0?text:"Enter something in the textbox to preview it here"}</p>
         </div>
         </>
     )
